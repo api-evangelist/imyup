@@ -1,7 +1,27 @@
 aid: imyup
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/imyup.png
 name: imyup
-description: imyup is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  imyup (imyup.com) is a WordPress-powered content website publishing how-to
+  guides, reviews, and download articles focused on mobile gaming (PUBG Mobile,
+  GTA, FIFA, racing and bike games) alongside jobs and general-information posts.
+  It was surfaced as a portfolio company of Slow Ventures and added to the API
+  Evangelist network as a stub for enrichment. As of this pass the public site
+  exposes no API, developer portal, or programmatic surface; the only
+  machine-readable artifacts discovered are an auto-generated llms.txt and a
+  public XML sitemap. This profile remains a content publication rather than an
+  API provider.
 url: https://raw.githubusercontent.com/api-evangelist/imyup/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Content
+- Mobile Gaming
+- Blog
+- Media
+- Downloads
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,14 @@ maintainers:
 common:
 - type: Website
   url: https://imyup.com
+- type: Blog
+  url: https://imyup.com/
+- type: LLMsTxt
+  url: llms/imyup-llms.txt
+- type: DomainSecurity
+  url: security/imyup-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
